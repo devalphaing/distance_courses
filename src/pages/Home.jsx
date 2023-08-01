@@ -3,11 +3,10 @@ import { Button } from 'primereact/button';
 import styles from './Home.module.css'
 import Popup from '../components/Popup';
 
-const Home = ()=> {
+const Home = () => {
   return (
     <Fragment>
-        home page
-        <Popup />
+      <Popup />
     </Fragment>
   )
 }

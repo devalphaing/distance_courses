@@ -16,35 +16,57 @@ const Popup = () => {
     }, []);
 
     const showSuccess = (e) => {
-        toast.current.show({ severity: 'success', summary: 'Success', detail: e?e:'Form Submitted', life: 3000 });
+        toast.current.show({ severity: 'success', summary: 'Success', detail: e ? e : 'Form Submitted', life: 3000 });
     };
 
     const showError = (e) => {
-        toast.current.show({severity:'error', summary: 'Error', detail: e, life: 3000});
+        toast.current.show({ severity: 'error', summary: 'Error', detail: e, life: 3000 });
     };
 
     const isValidEmail = (str) => {
         // Regular expression for email validation
         const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-
         return emailRegex.test(str);
     }
 
+    const isValidPhoneNumber = (phoneNumber) => {
+        // Regular expression to match a valid phone number
+        const phoneRegex = /^(\+?[0-9]{1,4})?\s?(\d{7,14})$/
+        // Check if the phoneNumber matches the regex pattern
+        return phoneRegex.test(phoneNumber)
+    }
 
     const handleSubmit = () => {
 
-        const inputString = userInfo?.email;
-        if (isValidEmail(inputString)) {
-        } else {
+        const userEmail = userInfo?.email
+        const userName = userInfo?.name
+        const userPhone = userInfo?.phone
+
+        let count = 0
+
+        if (!isValidEmail(userEmail)) {
             showError('Email not valid please re-enter')
             console.log("Invalid email address.");
-            return
+            count++
         }
 
+        if(!isValidPhoneNumber(userPhone)){
+            showError('Phone no. not valid please re-enter')
+            console.log("Invalid phone.");
+            count++
+        }
 
-        console.log('Form submitted!', userInfo);
-        setVisible(false)
-        showSuccess()
+        if(userName === null || userName?.length <= 1){
+            showError('Name not valid please re-enter')
+            console.log("Invalid name.");
+            count++
+        }
+
+        if(count === 0){
+            console.log('Form submitted!', userInfo);
+            setVisible(false)
+            showSuccess()
+        }
     };
 
     const nameChangeHandler = (e) => {
@@ -79,8 +101,6 @@ const Popup = () => {
         <Fragment>
 
             <Toast ref={toast} />
-
-            <Button onClick={()=> setVisible(true)}>click</Button>
 
             <Dialog
                 header="Form"
