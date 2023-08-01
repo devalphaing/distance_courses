@@ -3,6 +3,7 @@ import styles from './Popup.module.css';
 import { Dialog } from 'primereact/dialog';
 import { Toast } from 'primereact/toast';
 import { Button } from 'primereact/button';
+import axios from 'axios';
 
 const Popup = () => {
     const [visible, setVisible] = useState(false);
@@ -36,7 +37,10 @@ const Popup = () => {
         return phoneRegex.test(phoneNumber)
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+
+        const response = await axios.get('http://localhost:3000/')
+        console.log(response.data.message, ' response')
 
         const userEmail = userInfo?.email
         const userName = userInfo?.name
