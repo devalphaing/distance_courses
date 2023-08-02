@@ -1,0 +1,26 @@
+.container {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.year-text-container {
+    display: flex;
+    justify-content: end;
+}
+
+.year-text {
+    background-color: rgb(250, 235, 215);
+    width: 60%;
+    border-radius: 1rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}

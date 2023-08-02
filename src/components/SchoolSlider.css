@@ -1,0 +1,27 @@
+/* Your other styles */
+
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .arrow-button.prev {
+    left: 10px;
+  }
+  
+  .arrow-button.next {
+    right: 10px;
+  }
+  
+  .card-container{
+    display: flex;
+    gap: 1rem;
+  }

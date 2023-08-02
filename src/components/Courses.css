@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.p-tabview-nav-container {
+    border: 1px solid #dee2e6;
+    border-width: 0 0 2px 0;
+}
+
+.p-tabview .p-tabview-nav {
+    background: #ffffff;
+    border: none;
+}
