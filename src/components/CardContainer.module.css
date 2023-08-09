@@ -1,0 +1,62 @@
+.outer-container{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-img{
+    height: 13rem;
+    width: 7rem;
+}
+
+.text-bg{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.diff-text{
+    color: #0056d2;
+}
+
+.left-container{
+    border: 1px solid red;
+}
+
+.card-container{
+    border-left: 3px solid #1200de;
+    border-radius: 0.5rem;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header{
+    padding: 2rem 0rem 2rem 1rem;
+}
+
+.para{
+    padding: 2rem 0rem 2rem 1rem;
+}
+
+
+@media (max-width: 600px) {
+    .outer-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-bg{
+        display: flex;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1.4rem;
+    }
+}

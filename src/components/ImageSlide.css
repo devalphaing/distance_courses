@@ -1,0 +1,33 @@
+.container-imageSlide {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.container-imageSlide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeAnimation 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 599px) {
+    .container-imageSlide {
+        height: 8rem;
+    }
+}

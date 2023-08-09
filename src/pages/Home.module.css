@@ -42,7 +42,7 @@
         font-size: 0.7rem;
     }
 
-    img{
+    .img-icon{
         height: 2.5rem;
     }
 }
@@ -56,7 +56,7 @@
         font-size: 0.5rem;
     }
 
-    img{
+    .img-icon{
         height: 2rem;
     }
 }

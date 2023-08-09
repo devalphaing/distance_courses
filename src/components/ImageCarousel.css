@@ -1,0 +1,41 @@
+.carousel-root {
+    width: 80%;
+    /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+.carousel .slider-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.carousel .slider {
+    width: 100%;
+    display: flex;
+}
+
+.carousel .carousel-item {
+    flex: 0 0 50%;
+    /* Show 2 images at a time */
+    transition: transform 0.5s ease;
+}
+
+.carousel .control-arrow {
+    font-size: 24px;
+}
+
+/* Animate the transition */
+.carousel .carousel-item {
+    transition: transform 0.5s ease;
+}
+
+.carousel .slide {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel .carousel-item img {
+    max-height: 20rem;
+    /* Adjust the height as needed */
+    width: auto;
+    margin: 0 auto;
+}

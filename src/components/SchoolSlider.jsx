@@ -11,6 +11,7 @@ const SchoolSlider = () => {
         <div className='card-container'>
             <InfoCard />
             <InfoCard />
+            <InfoCard />
         </div>
       )
     

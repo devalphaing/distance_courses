@@ -39,8 +39,8 @@ const Popup = () => {
 
     const handleSubmit = async () => {
 
-        const response = await axios.get('http://localhost:3000/')
-        console.log(response.data.message, ' response')
+        // const response = await axios.get('http://localhost:3000/')
+        // console.log(response.data.message, ' response')
 
         const userEmail = userInfo?.email
         const userName = userInfo?.name

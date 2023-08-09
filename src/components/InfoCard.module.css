@@ -1,5 +1,6 @@
 .container {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
 }
 
 .year-text-container {
@@ -9,9 +10,9 @@
 
 .year-text {
     background-color: rgb(250, 235, 215);
-    width: 60%;
+    width: 40%;
     border-radius: 1rem;
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    padding: 0.2rem 0rem 0.2rem 0rem;
     font-size: 0.7rem;
     display: flex;
     justify-content: center;
@@ -20,7 +21,30 @@
 
 .topic{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.compare-text{
+    border: 1px solid #0056d2;
+    border-radius: 0rem 0rem 1rem 1rem;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: white;
+    background-color: #0056d2;
+}
+
+@media (max-width: 599px) {
+    .topic{
+        font-size: 0.6rem;
+    }   
 }
