@@ -48,7 +48,8 @@ const Home = () => {
 
       <Courses />
       <ImageCarousel />
-      <CardContainer />
+      <CardContainer /> 
+            
 
       <br></br>
       <br></br>

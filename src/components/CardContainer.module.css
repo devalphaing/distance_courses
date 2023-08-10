@@ -21,6 +21,7 @@
     justify-content: center;
     font-weight: 800;
     font-size: 2rem;
+    margin-top: 2rem;
 }
 
 .diff-text{
@@ -28,7 +29,7 @@
 }
 
 .left-container{
-    border: 1px solid red;
+    
 }
 
 .card-container{
@@ -39,11 +40,24 @@
 }
 
 .header{
-    padding: 2rem 0rem 2rem 1rem;
+    padding: 1rem 0rem 0rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .para{
-    padding: 2rem 0rem 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.card-comp{
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-icon{
+    padding: 1rem 0rem 0rem 1rem;
 }
 
 
@@ -58,5 +72,7 @@
         justify-content: center;
         font-weight: 800;
         font-size: 1.4rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
     }
 }
