@@ -1,0 +1,25 @@
+.outer-container{
+    background-color: #14151a;
+    color: #989EB6;
+}
+
+.container{
+    padding: 4rem;
+}
+
+.container-p{
+    padding: 0rem 1rem 2rem 1rem;
+    border-bottom: 1px solid #989EB6;
+    text-align: center;
+}
+
+.container-two-p{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 599px) {
+    .container{
+        padding: 1rem;
+    }
+}

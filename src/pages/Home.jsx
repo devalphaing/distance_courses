@@ -8,6 +8,8 @@ import google from '../assets/google.svg'
 import Courses from '../components/Courses';
 import ImageCarousel from '../components/ImageCarousel';
 import CardContainer from '../components/CardContainer';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -49,10 +51,8 @@ const Home = () => {
       <Courses />
       <ImageCarousel />
       <CardContainer /> 
-            
-
-      <br></br>
-      <br></br>
+      <Contact />            
+      <Footer />
     </Fragment>
   )
 }

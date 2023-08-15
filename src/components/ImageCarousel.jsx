@@ -6,13 +6,12 @@ import "./ImageCarousel.css";
 
 import imageOne from "../assets/image1.1.jpg";
 import imageTwo from "../assets/image1.2.jpg";
+import imageThree from '../assets/talking.jpg'
 
 const ImageCarousel = () => {
   const images = [
-    imageOne,
     imageTwo,
     imageOne,
-    imageTwo,
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
