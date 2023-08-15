@@ -10,6 +10,8 @@ import ImageCarousel from '../components/ImageCarousel';
 import CardContainer from '../components/CardContainer';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer'
+import AboutUs from '../components/AboutUs';
+import Services from '../components/Services';
 
 const Home = () => {
   return (
@@ -52,6 +54,9 @@ const Home = () => {
       <ImageCarousel />
       <CardContainer /> 
       <Contact />            
+      <AboutUs />
+      <Services />
+
       <Footer />
     </Fragment>
   )

@@ -1,0 +1,44 @@
+.container{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-right: 3px solid #0056d2;
+}
+
+.icon{
+    font-size: 4rem;
+    color: #0056d2;
+    padding-bottom: 1rem;
+}
+
+.head{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.para{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.btn{
+    border: 1px solid #0056d2;
+    background-color:  #0056d2;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
