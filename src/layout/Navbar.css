@@ -45,6 +45,57 @@
 }
 
 
+.navbar-contact-left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-contact-talk-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.navbar-contact-card-container{
+    width: 100%;
+    padding: 2rem;
+    background-color: aliceblue;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.navbar-contact-support-text{
+    background-color: #0056d2;
+    color: white;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 0.7rem;
+    position: relative;
+    z-index: 2;
+    bottom: 2.5rem;
+}
+
+.navbar-contact-contact{
+    padding: 0.3rem 0rem 0.3rem 0rem;
+}
+
+.navbar-contact-call{
+    padding: 0rem 0.3rem 0rem 0.3rem;
+}
+
+.navbar-contact-blue-info{
+    color: #0056d2;
+    font-weight: 1000;
+}
+
+.navbar-contact-need-answer{
+    font-size: larger;
+    font-weight: 600;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+
 @media (max-width: 600px) {
     .card {
         display: block;

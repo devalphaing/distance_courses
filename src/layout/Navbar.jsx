@@ -41,6 +41,35 @@ const Navbar = () => {
     // }
   ];
 
+  const renderContact = ()=> {
+    return (
+      <div className="navbar-contact-left-container">
+        <div className="navbar-contact-talk-text">Talk To Our Experts</div>
+        <div className="navbar-contact-card-container">
+          <span className="navbar-contact-support-text">Support</span>
+
+          <div className="navbar-contact-contact">
+            <i className="pi pi-phone"></i>
+            <span className="navbar-contact-call">Call Us :</span>
+            <span className="navbar-contact-blue-info">9191919191</span>
+          </div>
+
+          <div className="navbar-contact-contact">
+            <i className="pi pi-google"></i>
+            <span className="navbar-contact-call">Email :</span>
+            <span className="navbar-contact-blue-info">xyz@gmail.com</span>
+          </div>
+        </div>
+
+        <div className="navbar-contact-need-answer">Need answers ? Call us!</div>
+
+        <div className="navbar-contact-callus">
+          Our team of experts are available for you round the clock
+        </div>
+      </div>
+    )
+  }
+
   const aboutItem = {
     label: "About",
     icon: "pi pi-info",
@@ -57,9 +86,9 @@ const Navbar = () => {
     label: "Contact",
     icon: "pi pi-envelope",
     command: () => {
-      setHead("COntact Us");
+      setHead("Contact Us");
       setContent(
-        `<div>Hello</div>`
+        renderContact
       );
       setOpen(true);
     },
