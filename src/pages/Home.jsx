@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import styles from './Home.module.css'
 import Popup from '../components/Popup';
 import ImageSlide from '../components/ImageSlide';
@@ -12,8 +12,14 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer'
 import AboutUs from '../components/AboutUs';
 import Services from '../components/Services';
+import MorePopup from '../components/MorePopup';
 
 const Home = () => {
+
+  const [moreVisible, setMoreVisible] = useState(false);
+  const [head, setHead] = useState('')
+  const [content, setContent] = useState('')
+
   return (
     <Fragment>
       <Popup />
@@ -55,7 +61,18 @@ const Home = () => {
       <CardContainer /> 
       <Contact />            
       <AboutUs />
-      <Services />
+      <Services 
+        moreVisible={moreVisible}
+        setMoreVisible={setMoreVisible}
+        setHead={setHead}
+        setContent={setContent}
+      />
+      <MorePopup 
+        moreVisible={moreVisible}
+        setMoreVisible={setMoreVisible}
+        head={head}
+        content={content}
+      />
 
       <Footer />
     </Fragment>

@@ -36,6 +36,10 @@
     padding: 0.5rem 3rem 0.5rem 3rem;
 }
 
+.btn:hover{
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     .container{
         width: 80%;

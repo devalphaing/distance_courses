@@ -1,27 +1,36 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import styles from './MorePopup.module.css';
 import { Dialog } from 'primereact/dialog';
+import { Button } from 'primereact/button';
 
-const MorePopup = () => {
-    const [visible, setVisible] = useState(false);
+const MorePopup = ({ 
+        moreVisible,
+        setMoreVisible,
+        head=null,
+        content=null 
+    }) => {
+    
 
-    const handleSubmit = async () => {
-
+    const handleSubmit = () => {
+        setMoreVisible(false)
     };
 
     return (
         <Fragment>
             <Dialog
-                header="Form"
-                visible={visible}
-                onHide={() => setVisible(false)}
+                header={head}
+                visible={moreVisible}
+                onHide={() => setMoreVisible(false)}
                 closable={false}
                 // style={{ width: '50%' }}
                 className={styles['popup']}
             >
-                <div className={styles['parent-container']}>
-
+                <div className={styles['parent-container']} onClick={handleSubmit}>
+                    {content}
+                    <Button onClick={handleSubmit} className={styles['btn']}>Ok</Button>
                 </div>
+
+
             </Dialog>
         </Fragment>
     );

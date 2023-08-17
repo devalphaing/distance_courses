@@ -13,6 +13,25 @@
     width: 50%;
 }
 
+.parent-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.btn{
+    background-color: #0056d2;
+    border: 1px solid #0056d2;
+    border-radius: 0.5rem;
+    padding: 0.3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 10%;
+}
+
 @media (max-width: 599px) {
     .popup{
         width: 90%;
