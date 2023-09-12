@@ -10,11 +10,11 @@ const Popup = () => {
     const [userInfo, setUserInfo] = useState(null);
     const toast = useRef(null);
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setVisible(true);
-    //     }, 3000);
-    // }, []);
+    useEffect(() => {
+        setTimeout(() => {
+            setVisible(true);
+        }, 3000);
+    }, []);
 
     const showSuccess = (e) => {
         toast.current.show({ severity: 'success', summary: 'Success', detail: e ? e : 'Form Submitted', life: 3000 });
