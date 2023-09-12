@@ -1,0 +1,28 @@
+.faq-container {
+    padding: 1rem 4rem 1rem 4rem;
+}
+
+.faq-container .p-component {
+    width: 100%;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+    color: #0056D2;
+    border-radius: 1rem !important;
+    margin-bottom: 1rem;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link:hover {
+    color: #0056D2 !important; /* Change to the desired color when hovering */ 
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+    color: #0056D2;
+    border-radius: 1rem !important;
+    margin-bottom: 1rem;
+}
+
+.p-accordion .p-accordion-content {
+    border: none;
+    color: #000000;
+}

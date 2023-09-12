@@ -13,6 +13,7 @@ import Footer from '../components/Footer'
 import AboutUs from '../components/AboutUs';
 import Services from '../components/Services';
 import MorePopup from '../components/MorePopup';
+import Faq from '../components/Faq';
 
 const Home = () => {
 
@@ -73,6 +74,8 @@ const Home = () => {
         head={head}
         content={content}
       />
+
+      <Faq />
 
       <Footer />
     </Fragment>
